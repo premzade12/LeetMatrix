@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117; /* Dark futuristic theme */
+    color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.user-profile img{
+    border-radius: 50%;
+}
+/* Header */
+.name {
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00eaff;
+    text-shadow: 0px 0px 10px rgba(0, 234, 255, 0.8);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.profile img {
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00eaff;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.7);
+    margin-bottom: 10px;
+}
+
+
+.para {
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Page Layout */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(36, 36, 36, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 234, 255, 0.3);
+}
+
+h1 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    font-size: 2rem;
+    color: #00eaff;
+    text-shadow: 0px 0px 10px rgba(0, 234, 255, 0.7);
+}
+
+/* Search Bar */
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input Field */
+#user-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00eaff;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#user-input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+/* 🔍 Search Button */
+#search-btn {
+    background: linear-gradient(135deg, #00eaff, #5f00ff);
+    color: white;
+    padding: 8px 16px; /* Decreased size */
+    border: none;
+    border-radius: 50px; /* Sleek rounded shape */
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 234, 255, 0.7);
+    transition: 0.3s ease-in-out;
+}
+
+#search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 234, 255, 0.9);
+}
+
+/* 📊 Progress Circle */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: conic-gradient(#00eaff var(--progress-degree, 0%), rgba(255, 255, 255, 0.1) 0%);
+    box-shadow: 0px 0px 10px rgba(0, 234, 255, 0.7);
+    flex-direction: column; /* Stack elements */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+/* Easy / Medium / Hard Labels */
+.difficulty-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #b8b8b8;
+    margin-top: 5px;
+}
+
+/* Progress Stats */
+.progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* 📦 Stats Cards */
+.stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(50, 50, 50, 0.9);
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 234, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Badge Section */
+.badge-container {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.badge-container img {
+    width: 70%;
+    height: auto;
+}
+
+/* 🏆 Stats Container */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
